@@ -1,5 +1,8 @@
 <template>
-  <h1>This is the Pets page</h1>
+  <div class="">
+      <h3>This is the Pet page</h3>
+  </div>
+
 </template>
 
 <script>
