@@ -4,7 +4,6 @@
       <router-link to="/"> Home |</router-link>
       <router-link to="/cats"> Cats |</router-link>
       <router-link to="/dogs"> Dogs |</router-link>
-      <router-link to="/pet"> Pet </router-link>
     </div>
     <b-container>
       <router-view/>
@@ -26,7 +25,7 @@
 
   a {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 20px;
     color: #2c3e50;
 
     &.router-link-exact-active {
