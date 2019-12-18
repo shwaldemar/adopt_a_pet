@@ -5,7 +5,7 @@
       <template v-slot:cell(name)="data">
         <!-- `data.value` is the value after formatted by the Formatter -->
 
-        <router-link class="pet-view-container" :to="`/pets/cats/${data.index}`">
+        <router-link class="pet-view-container" :to="`/pets/${species}/${data.index}`">
           {{ data.value }}
         </router-link>
       </template>
@@ -13,19 +13,11 @@
   </div>
 </template>
 
-<script>
-import { mapState } from 'vuex'
-// import cats from '@/data/cats' //using mapstate from vuex instead.
-
-export default {
-  data: function () {
-    return {}
-  },
-  computed: {
-    ...mapState(['cats'])
+<script type="text/javascript">
+  export default {
+    props: {
+      species: String,
+      pets: Array
+    }
   }
-}
 </script>
-
-<style lang="css" scoped>
-</style>

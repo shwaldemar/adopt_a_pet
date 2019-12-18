@@ -1,9 +1,9 @@
 <template>
-  <div class="">
+  <div class="pet-view-container">
     <h1>{{ animal.name  }} ({{$route.params.species}})</h1>
     <h4>is a {{animal.age }} year old {{animal.gender}} {{animal.color}}
-    {{animal.breed }} {{ animal.species}}.
-    {{animal.name}} weighs {{animal.weight}} llbs & is {{animal.notes}}.</h4>
+    {{animal.breed }} {{ animal.species}}.</h4>
+    <h4>{{animal.name}} weighs {{animal.weight}} llbs & is {{animal.notes}}</h4>
   </div>
 
 </template>
